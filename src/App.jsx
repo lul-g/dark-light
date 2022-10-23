@@ -3,12 +3,14 @@ import reactLogo from './assets/react.svg'
 import './App.css'
 import Header from './assets/Header.jsx'
 import Main from './assets/Main'
+import setRootColor from './set_bg'
 
 function App() {
   const[dark, setDark] = useState(false)
   const bg = {
     backgroundColor: dark ? '#282D35' : 'white'
 }
+  dark ? setRootColor({color: '#E5E5E5'}) : setRootColor({color: '#21222a'}) 
   function mode() {
     setDark(prev => !prev)
 }

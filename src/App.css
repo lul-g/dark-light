@@ -14,23 +14,32 @@
   gap: 1rem;
 }
 
-body {
+/* 21222a -white*/
+/* E5E5E5 -dark */
+:root {
+  --root-bg: "#E5E5E5";
+}
+#root {
   display: flex;
-  background-color: #E5E5E5;
-  padding-top: 2rem;
-  /* align-items:flex-end; */
+  background-color: var(--root-bg);
+  align-items:center;
   justify-content: center;
-  height: 90vh;
+  height: 100vh;
+  transition: all linear .3s;
 }
 .App {
   width: 40vw;
   height: 85vh;
   overflow: hidden;
+  transition: all linear .1s;
+  
 }
 .container {
   padding: 1rem 2rem;
   font-family: Karla, Arial, sans-serif;
   user-select: none;
+  transition: all linear .1s;
+
 }
 .header {
   box-shadow: 0 2px 5px 0px #cccccc;
