@@ -25,24 +25,21 @@
   align-items:center;
   justify-content: center;
   height: 100vh;
-  transition: all linear .3s;
+  transition: all linear .2s;
+  
 }
 .App {
   width: 40vw;
   height: 85vh;
-  overflow: hidden;
-  transition: all linear .1s;
-  
+  overflow: hidden; 
 }
 .container {
   padding: 1rem 2rem;
   font-family: Karla, Arial, sans-serif;
   user-select: none;
-  transition: all linear .1s;
-
 }
 .header {
-  box-shadow: 0 2px 5px 0px #cccccc;
+  box-shadow: 0 2px 5px 0px #cccccc; 
 }
 .left {
   width: 25%;

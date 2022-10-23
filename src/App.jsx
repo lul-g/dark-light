@@ -8,7 +8,8 @@ import setRootColor from './set_bg'
 function App() {
   const[dark, setDark] = useState(false)
   const bg = {
-    backgroundColor: dark ? '#282D35' : 'white'
+    backgroundColor: dark ? '#282D35' : 'white',
+    boxShadow: dark ? '' : '0px 0px 70px 20px #19a5be'
 }
   dark ? setRootColor({color: '#E5E5E5'}) : setRootColor({color: '#21222a'}) 
   function mode() {
