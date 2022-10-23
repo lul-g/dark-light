@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+body {
+  display: flex;
+  background-color: #cccaca;
+  padding-top: 2rem;
+  /* align-items:flex-end; */
+  justify-content: center;
+  height: 90vh;
+}
+.App {
+  width: 40vw;
+  height: 85vh;
+  overflow: hidden;
+}
+.container {
+  padding: 1rem 2rem;
+  font-family: Karla, Arial, sans-serif;
+  user-select: none;
+}
+.header {
+  box-shadow: 0 2px 5px 0px #cccccc;
+}
+.left {
+  width: 25%;
+  justify-content:space-around;
+  margin: 0 1.5rem;
+}
+.left h1{
+  display: inline;
+  font-size: 24px;
+  letter-spacing: -1.5px;
+  /* font-weight: 900; */
+  color: #67dbfb;
+}
+.left i{
+  font-size: 40px;
+  color: #67dbfb;
+}
+.right ul {
+  list-style: none;
+  font-size: 12px;
+  font-weight: 700;
+}
+.right ul :nth-child(3) {
+  color: #c4bfbf;
+}
+.right input {
+  height: 0;
+	width: 0;
+	visibility: hidden;
+}
+.right label {
+  padding: 2px 18px;
+  border-radius: 50px;
+  background-color: #2B283A;
+  border: 1px solid #2B283A;
+  position: relative;
+  cursor: pointer;
+}
+.right label::before {
+  content: '';
+  position: absolute;
+  inset:0;
+  padding: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: white;
+  transition: ease .3s;
+}
+.right input:checked + label {
+  background: white;
+  border: white 1px solid;
+}
+.right input:checked + label::before {
+  transform: translateX(100%);
+  background: #222222;
+}
+
+.main {
+  margin: 3rem 0;
+  color: #2B283A;
+  position: relative;
+  font-family: 'Inter', sans-serif;
+}
+.main h1 {
+  font-size: 39.6px;
+  letter-spacing: -3px;
+}
+.main ul {
+  list-style: none;
+  padding: 2rem 0 0 3rem;
+  font-weight: 400;
+  position: relative;
+}
+.main ul li::before {
+  content:"·";
+  font-size: 5rem;
+  line-height:11px;
+  color: #00ABCA;
+  position: absolute;
+  left: 1rem;
+}
+.main ul li {
+  margin-bottom: 1rem;
+  overflow-wrap: break-word;
+  width: 90%;
+}
+.icon {
+  color: #e6e4e485;
+  font-size: 17rem;
+  position: absolute;
+  right: -8.5rem;
+  top: 3rem;
+}
